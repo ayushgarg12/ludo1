@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ludo</title>
+    <style>
+    body{
+        background-color: blueviolet;
+    } 
+     .container{
+       width: 50%;margin:auto;text-align: center;  
+     }
+     .dice{
+         text-align:center; display: inline-block;
+     }
+     h1{
+         margin: 30px;
+         text-shadow: 2px 2px white;
+         color: aquamarine;
+     }
+     p{
+         font-size:20px; color: brown;
+     }
+     button{ padding: 10px; background-color: aqua; color: aliceblue;
+     border: none;
+     }
+     img{
+         width: 70%;
+     }
+    </style>
+</head>
+<div class="container">
+     <h1>AYUSH KUDO</h1>
+
+     <div class="dice">
+       <p>Player 1</p>
+       <img src="C:\Users\Gupta Sudhir\Desktop\ayush\ludo\images\dice2.png" id="check1">   
+     </div>
+     <div class="dice">
+       <p>Player 2</p>
+       <img src="C:\Users\Gupta Sudhir\Desktop\ayush\ludo\images\dice5.png" id ="check2">
+     </div>
+</div>
+<div >
+    <button onclick="ludogame()">CLICK ME</button>
+</div>
+
+<script>
+
+ ludogame = () => {
+    const Player1 = Math.floor(Math.random() * 6) +  1;
+    const Player1dice = `C:\Users\Gupta Sudhir\Desktop\ayush\ludo\images\dice${Player1}.png`;
+    document.getElementById('check1').setAttribute('src', play1dice);
+   
+    const Player2 = Math.floor(Math.random() * 6) +  1;
+    const Player2dice = `C:\Users\Gupta Sudhir\Desktop\ayush\ludo\images\dice${Player2}.png` ;
+    document.getElementById('check2').setAttribute('src', play2dice);
+    }
+</script>
+
+</html>
